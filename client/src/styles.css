@@ -1,0 +1,125 @@
+/* 🌈 Hybrid ATS Global Styles — Blue & Green Theme */
+
+:root {
+  --primary-blue: #007BFF;
+  --primary-green: #00C896;
+  --text-dark: #222;
+  --text-light: #fff;
+  --bg-gradient: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Centered form container */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 320px;
+  transition: 0.4s;
+}
+
+form:hover {
+  transform: scale(1.02);
+}
+
+/* Inputs and buttons */
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+input, select {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+button {
+  background: var(--primary-green);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-blue);
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Dashboard layout */
+.dashboard {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: rgba(255,255,255,0.2);
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Footer or brand logo placement */
+.footer-logo {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-logo img {
+  width: 40px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
