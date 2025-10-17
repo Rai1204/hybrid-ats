@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api' });
+const API = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'https://hybrid-ats.onrender.com' });
 
 export function setAuth(token){
   API.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : '';
